@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanni Buchieri · Ciencias de la Computación</title>
     <meta name="description" content="Portafolio de Giovanni Buchieri, Licenciado en Ciencias de la Computación. Desarrollador de software.">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header class="site-header">
@@ -17,8 +17,7 @@
                 <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
                 <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                <li><a href="./assets/docs/Giovanni_Buchieri_CV.pdf" target="_blank" class="nav-link" style="color: var(--accent);">Curriculum</a></li>
-            </ul>
+                <li><a href="/assets/docs/Giovanni_Buchieri_CV.pdf" target="_blank" class="nav-link" style="color: var(--accent);">Curriculum</a></li>            </ul>
         </nav>
     </header>
 
@@ -69,90 +68,58 @@
         <section id="proyectos" class="section">
             <h2 class="section-title">Proyectos</h2>
             <div class="grid-proyectos">
-                
-                <!-- Proyecto: Tesis -->
+            
+                <!-- Bucle de Hugo leyendo proyectos.json -->
+                {{ range .Site.Data.proyectos }}
                 <article class="tarjeta-proyecto">
-                    <span class="etiqueta etiqueta-mono">Tesis</span>
-                    <h3>Análisis de Punteros · Wave Propagation</h3>
-                    <p>
-                        Investigación académica en la que diseñé una extensión sensible al flujo del
-                        algoritmo de análisis de punteros Wave Propagation, para observar la evolución
-                        del grafo de punteros instrucción por instrucción.
-                    </p>
-                    <div class="etiquetas-fila">
-                        <span class="etiqueta">C</span>
-                        <span class="etiqueta">Flex & Bison</span>
-                        <span class="etiqueta">Análisis estático</span>
-                    </div>
-                    <a href="https://github.com/GiovA07/Pointer_Analysis" target="_blank" class="tarjeta-link">Ver detalles</a>
-                </article>
 
-                <!-- Proyecto: Autómatas Biológicos -->
-                <article class="tarjeta-proyecto">
-                    <span class="etiqueta etiqueta-mono">Proyecto de Analista</span>
-                    <h3>Biological Automata</h3>
-                    <p>
-                        Simulación de autómata celular con interacciones complejas entre entidades (bacterias, bacteriófagos, antídotos). 
-                        Desarrollo de la API REST en Python encargada de procesar la lógica central del tablero y servir las modificaciones al frontend en React.
-                    </p>
-                    <div class="etiquetas-fila">
-                        <span class="etiqueta">Python</span>
-                        <span class="etiqueta">Flask</span>
-                        <span class="etiqueta">React</span>
-                        <span class="etiqueta">API REST</span>
-                    </div>
-                    <a href="https://github.com/GiovA07/Biological_Automata" target="_blank" class="tarjeta-link">Ver código</a>
-                </article>
+                    {{ if .etiqueta_superior }}
+                    <span class="etiqueta etiqueta-mono">{{ .etiqueta_superior }}</span>
+                    {{ end }}
 
-                <!-- Proyecto: Documento Compartido -->
-                <article class="tarjeta-proyecto">
-                    <h3>Shared-Document</h3>
-                    <p>
-                        Este proyecto implementa una aplicación distribuida de "edición colaborativa de documentos" utilizando un modelo cliente–servidor 
-                        y el algoritmo de Transformaciones Operacionales (OT) para resolver conflictos de edición concurrente.
-                    </p>
-                    <div class="etiquetas-fila">
-                            <span class="etiqueta">Python</span>
-                    </div>
-                    <a href="https://github.com/GiovA07/Shared_Document" target="_blank" class="tarjeta-link">Ver código</a>
-                </article>
+                    <h3>{{ .titulo }}</h3>
 
-                <!-- Proyecto: App con Django -->
-                <article class="tarjeta-proyecto">
-                    <h3>To-Do List App</h3>
-                    <p>
-                        Aplicación web de gestión de tareas con registro de usuarios, pensada para
-                        practicar buenas prácticas de seguridad en Django.
-                    </p>
+                    {{ if .imagen }}
+                        <img src="{{ .imagen }}" alt="Captura del proyecto {{ .titulo }}" class="imagen-proyecto">
+                    {{ end }}
+
+                    <p>{{ .descripcion }}</p>
+
                     <div class="etiquetas-fila">
-                            <span class="etiqueta">Python</span>
-                            <span class="etiqueta">Django</span>
+                        {{ range .etiquetas }}
+                        <span class="etiqueta">{{ . }}</span>
+                        {{ end }}
                     </div>
-                    <a href="https://github.com/GiovA07/To-Do-List" target="_blank" class="tarjeta-link">Ver código</a>
+
+                    <a href="{{ .enlace }}" target="_blank" class="tarjeta-link">{{ .texto_enlace }}</a>
                 </article>
+                {{ end }}
             </div>
         </section>
 
         <section id="habilidades" class="section">
             <h2 class="section-title">Stack Tecnológico</h2>
             <div class="skills-grid">
+
+                {{ range .Site.Data.skills }}
                 <div class="skills-group">
-                    <h3 class="skills-group-title">Lenguajes</h3>
+                    <h3 class="skills-group-title">{{.categoria}}</h3>
+
                     <ul class="lista-habilidades">
-                        <li>Go</li>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>Bash</li>
+                        {{range .items}}
+                        <li> 
+
+                            {{ if .img }}
+                                <img src="{{ .img }}" alt="{{ .nombre }}" class="icono-skill" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 8px;">
+                            {{ end }}
+
+                            {{.nombre}} 
+                        </li>
+                        {{end}}
                     </ul>
+
                 </div>
-                <div class="skills-group">
-                    <h3 class="skills-group-title">Herramientas</h3>
-                    <ul class="lista-habilidades">
-                        <li>Git / GitHub</li>
-                    </ul>
-                </div>
+                {{end}}
             </div>
         </section>
     </main>

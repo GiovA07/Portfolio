@@ -1,0 +1,36 @@
+[
+  {
+    "titulo": "Análisis de Punteros · Wave Propagation",
+    "etiqueta_superior": "Tesis",
+    "descripcion": "Investigación académica en la que diseñé una extensión sensible al flujo del algoritmo de análisis de punteros Wave Propagation, para observar la evolución del grafo de punteros instrucción por instrucción.",
+    "etiquetas": ["C", "Flex & Bison", "Análisis estático"],
+    "enlace": "https://github.com/GiovA07/Pointer_Analysis",
+    "texto_enlace": "Ver detalles"
+  },
+  {
+    "titulo": "Biological Automata",
+    "etiqueta_superior": "Proyecto de Analista",
+    "imagen": "/assets/img/biological-automata.gif",
+    "descripcion": "Simulación de autómata celular con interacciones complejas entre entidades. Desarrollo de la API REST en Python encargada de procesar la lógica central del tablero y servir las modificaciones al frontend en React.",
+    "etiquetas": ["Python", "Flask", "React", "API REST"],
+    "enlace": "https://github.com/GiovA07/Biological_Automata",
+    "texto_enlace": "Ver código"
+  },
+  {
+    "titulo": "Shared-Document",
+    "etiqueta_superior": "",
+    "descripcion": "Este proyecto implementa una aplicación distribuida de edición colaborativa de documentos utilizando un modelo cliente–servidor y el algoritmo de Transformaciones Operacionales (OT) para resolver conflictos de edición concurrente.",
+    "etiquetas": ["Python"],
+    "enlace": "https://github.com/GiovA07/Shared_Document",
+    "texto_enlace": "Ver código"
+  },
+  {
+    "titulo": "To-Do List App",
+    "etiqueta_superior": "",
+    "imagen": "/assets/img/to-do.gif",
+    "descripcion": "Aplicación web de gestión de tareas con registro de usuarios, pensada para practicar buenas prácticas de seguridad en Django.",
+    "etiquetas": ["Python", "Django"],
+    "enlace": "https://github.com/GiovA07/To-Do-List",
+    "texto_enlace": "Ver código"
+  }
+]

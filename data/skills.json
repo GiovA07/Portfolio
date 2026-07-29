@@ -1,0 +1,19 @@
+[
+    {
+        "categoria": "Lenguajes",
+        "items": [
+            { "nombre": "C", "img": "https://cdn-icons-png.flaticon.com/128/10050/10050572.png" },
+            { "nombre": "Java", "img": "https://cdn-icons-png.flaticon.com/128/3291/3291669.png" },
+            { "nombre": "Python", "img": "https://cdn-icons-png.flaticon.com/128/919/919852.png" },
+            { "nombre": "Go", "img": "" },
+            { "nombre": "SQL", "img": "https://cdn-icons-png.flaticon.com/128/5815/5815478.png" },
+            { "nombre": "Bash", "img": "https://cdn-icons-png.flaticon.com/128/15738/15738502.png" }
+        ]
+    },
+    {
+        "categoria": "Herramientas",
+        "items": [
+            { "nombre": "Git / GitHub", "img": "https://cdn-icons-png.flaticon.com/128/11518/11518876.png" }
+        ]
+    }
+]
