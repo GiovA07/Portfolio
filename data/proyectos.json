@@ -17,20 +17,20 @@
     "texto_enlace": "Ver código"
   },
   {
-    "titulo": "Shared-Document",
-    "etiqueta_superior": "",
-    "descripcion": "Este proyecto implementa una aplicación distribuida de edición colaborativa de documentos utilizando un modelo cliente–servidor y el algoritmo de Transformaciones Operacionales (OT) para resolver conflictos de edición concurrente.",
-    "etiquetas": ["Python"],
-    "enlace": "https://github.com/GiovA07/Shared_Document",
-    "texto_enlace": "Ver código"
-  },
-  {
     "titulo": "To-Do List App",
     "etiqueta_superior": "",
     "imagen": "/assets/img/to-do.gif",
     "descripcion": "Aplicación web de gestión de tareas con registro de usuarios, pensada para practicar buenas prácticas de seguridad en Django.",
     "etiquetas": ["Python", "Django"],
     "enlace": "https://github.com/GiovA07/To-Do-List",
+    "texto_enlace": "Ver código"
+  },
+  {
+    "titulo": "Shared-Document",
+    "etiqueta_superior": "",
+    "descripcion": "Este proyecto implementa una aplicación distribuida de edición colaborativa de documentos utilizando un modelo cliente–servidor y el algoritmo de Transformaciones Operacionales (OT) para resolver conflictos de edición concurrente.",
+    "etiquetas": ["Python"],
+    "enlace": "https://github.com/GiovA07/Shared_Document",
     "texto_enlace": "Ver código"
   }
 ]
