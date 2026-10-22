@@ -1,4 +1,12 @@
 [
+{
+    "titulo": "Short-URL API",
+    "etiqueta_superior": "",
+    "descripcion": "API RESTful de alto rendimiento en Go desarrollada bajo Clean Architecture (Repository Pattern), con soporte para persistencia en MySQL, almacenamiento en memoria thread-safe, alias personalizados.",
+    "etiquetas": ["Go", "MySQL", "Clean Architecture", "API REST", "HTML/CSS/JS"],
+    "enlace": "https://github.com/GiovA07/Short-URL",
+    "texto_enlace": "Ver detalles"
+  },
   {
     "titulo": "Análisis de Punteros · Wave Propagation",
     "etiqueta_superior": "Tesis",

@@ -69,23 +69,6 @@
             <h2 class="section-title">Proyectos</h2>
             <div class="grid-proyectos">
 
-                <!-- PROYECTO EN DESARROLLO -->
-                <article class="tarjeta-proyecto">
-                    
-                    <span class="etiqueta etiqueta-mono">En desarrollo...</span>
-                    
-                    <h3>Shorter URL API</h3>
-                    
-                    <p>API RESTful para acortar URLs desarrollada en el lenguaje Go. Seguro para concurrencia mediante Mutex y una base de datos MySQL persistente.</p>
-                    
-                    <div class="etiquetas-fila">
-                        <span class="etiqueta">Go</span>
-                        <span class="etiqueta">MySQL</span>
-                        <span class="etiqueta">API REST</span>
-                    </div>
-                    
-                </article>
-
                 <!-- Bucle de Hugo leyendo proyectos.json -->
                 {{ range .Site.Data.proyectos }}
                 <article class="tarjeta-proyecto">
