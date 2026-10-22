@@ -1,0 +1,35 @@
+[
+{
+    "title": "Short-URL API",
+    "description": "API RESTful de alto rendimiento en Go desarrollada bajo Clean Architecture (Repository Pattern), con soporte para persistencia en MySQL, almacenamiento en memoria thread-safe, alias personalizados.",
+    "tags": ["Go", "MySQL", "Clean Architecture", "API REST", "HTML/CSS/JS"],
+    "github": "https://github.com/GiovA07/Short-URL"
+  },
+  {
+    "title": "Biological Automata",
+    "image": "/src/img/biological-automata.gif",
+    "description": "Simulación de autómata celular con interacciones complejas entre entidades. Desarrollo de la API REST en Python encargada de procesar la lógica central del tablero y servir las modificaciones al frontend en React.",
+    "tags": ["Python", "Flask", "React", "API REST"],
+    "github": "https://github.com/GiovA07/Biological_Automata"
+  },
+  {
+    "title": "To-Do List App",
+    "etiqueta_superior": "",
+    "image": "/src/img/to-do.gif",
+    "description": "Aplicación web de gestión de tareas con registro de usuarios, pensada para practicar buenas prácticas de seguridad en Django.",
+    "tags": ["Python", "Django"],
+    "github": "https://github.com/GiovA07/To-Do-List"
+  },
+  {
+    "title": "Análisis de Punteros · Wave Propagation",
+    "description": "Investigación académica en la que diseñé una extensión sensible al flujo del algoritmo de análisis de punteros Wave Propagation, para observar la evolución del grafo de punteros instrucción por instrucción.",
+    "tags": ["C", "Flex & Bison", "Análisis estático"],
+    "github": "https://github.com/GiovA07/Pointer_Analysis"
+  },
+  {
+    "title": "Shared-Document",
+    "description": "Este proyecto implementa una aplicación distribuida de edición colaborativa de documentos utilizando un modelo cliente–servidor y el algoritmo de Transformaciones Operacionales (OT) para resolver conflictos de edición concurrente.",
+    "tags": ["Python"],
+    "github": "https://github.com/GiovA07/Shared_Document"
+  }
+]   
