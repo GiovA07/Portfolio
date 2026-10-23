@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  function renderProjects(projects) {
+ function renderProjects(projects) {
     if (!container) return;
     container.innerHTML = "";
 
@@ -106,8 +106,12 @@ document.addEventListener("DOMContentLoaded", () => {
         ? `<div class="proyecto-top"><span class="etiqueta etiqueta-mono status-badge">${project.top_badge}</span></div>` 
         : '';
 
-      const linkHtml = project.link 
-        ? `<a href="${project.link}" target="_blank" rel="noopener" class="tarjeta-link">${project.link_text || 'Ver código'}</a>` 
+      // Botón de GitHub actualizado con ícono SVG integrado
+      const githubLinkHtml = project.github 
+        ? `<a href="${project.github}" target="_blank" rel="noopener" class="tarjeta-link github-btn" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: bold;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="social-icon filter-white" alt="" aria-hidden="true" />
+            Ver código
+           </a>` 
         : '';
 
       card.innerHTML = `
@@ -117,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3>${project.title || ''}</h3>
           <p>${project.description || ''}</p>
           <div class="etiquetas-fila">${tagsHtml}</div>
-          <div>${linkHtml}</div>
+          <div style="margin-top: 15px;">${githubLinkHtml}</div>
         </div>
       `;
 
