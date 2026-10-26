@@ -1,6 +1,7 @@
 [
 {
     "title": "Short-URL API",
+    "image": "/src/img/short-url.gif",
     "description": "API RESTful de alto rendimiento en Go desarrollada bajo Clean Architecture (Repository Pattern), con soporte para persistencia en MySQL, almacenamiento en memoria thread-safe, alias personalizados.",
     "tags": ["Go", "MySQL", "Clean Architecture", "API REST", "HTML/CSS/JS"],
     "github": "https://github.com/GiovA07/Short-URL"
